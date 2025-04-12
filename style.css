@@ -1,0 +1,150 @@
+body{
+    margin: 0px;
+    color: rgb(255, 241, 241);
+    font-family: sans-serif;
+}
+
+
+.navbar{
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.203);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+.list{
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+}
+
+.list-box a{
+    position: relative;
+}
+
+.list-box a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.list-box a:hover::after{
+    width: 100%;
+}
+
+
+.list-item{
+    margin: 5vh;
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.list-item a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#jumbotron-container{
+    margin-top: 0vh;
+    height: 60vh;
+    background-image: linear-gradient(to top right, rgba(2, 2, 87) 40%, rgb(241, 71, 52)); 
+}  
+
+.context{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.description{
+    font-size: 20px;  
+}
+
+.description1{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.my-hobbies #jumbotron-container2{
+
+    height: 50vh;
+    margin-top: 0%;
+    background-image: linear-gradient(to bottom left, rgba(2, 2, 87)40%, rgb(241, 71, 52) );
+}
+
+.my-hobbies #jumbotron-container2 .context2{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100%;             /* Full height */
+    margin-right: 20px;      
+}
+
+#jumbotron-container3{
+
+    height: 50vh;
+    margin-top: 0%;
+    background-image: linear-gradient(to top left, rgba(2, 2, 87)40% , rgb(241, 71, 52));
+}
+
+
+.context3{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100%;             /* Full height */
+    margin-left: 20px;
+}
+
+.title-description{
+    position: relative;
+}
+
+
+.title-description::after{
+    content: '';
+    position: absolute;
+    background:rgb(255, 255, 255);
+    height: 2px;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    transition: all 0.75s ease;
+}
+
+.title-description:hover::after{
+    width: 50vh;
+    
+}
+
+footer{
+    text-align: center;
+    color: black;
+    font-family: Verdana;
+}
+
